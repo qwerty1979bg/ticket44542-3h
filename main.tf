@@ -1,3 +1,4 @@
 data "external" "example" {
-  program = ["bash", "-c", "sleep 190m"]
+  count=5
+  program = ["bash", "-c", "sleep 1m"]
 }
